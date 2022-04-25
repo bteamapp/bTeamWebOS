@@ -1,0 +1,5 @@
+Number   Name of Activity                            What it is?
+
+1        mainactivity                                The main-page display Upload Image
+2        photoviewframe                              The viewport for upload image!
+3        index                                       Show waiting screen
