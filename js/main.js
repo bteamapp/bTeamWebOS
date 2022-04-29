@@ -80,9 +80,25 @@ var appData = {
 		"title": "Settings",
 		"color": "#827717",
 		"id": "settings",
-		"image": "Program File/Settings/icon.png",
+		"image": "resources/empty.png",
 		"text": "Settings",
 		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Settings/index.html' allowfullscreen></iframe></div>"
+	},
+	"calculator": {
+		"title": "Calculator",
+		"color": "#827717",
+		"id": "calculator",
+		"image": "Program File/Calculator/icon.jpg",
+		"text": "Calculator",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Calculator/index.html' allowfullscreen></iframe></div>"
+	},
+	"Files": {
+		"title": "Files",
+		"color": "#827717",
+		"id": "files",
+		"image": "Program File/Files/icon.jpg",
+		"text": "Files",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Files/index.html' allowfullscreen></iframe></div>"
 	},
 	"theta": {
 		"title": "Story theta",

@@ -1,0 +1,1 @@
+++++++++You should set the disk mount is D disk, disk should as NTFS, in this version USB does not support++++++++
