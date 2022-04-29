@@ -1,0 +1,153 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+        <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+        @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+        body {
+            margin: 0;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body><br>
+<center><h1>-------- Setting --------</h1>
+</center>
+<center>
+<br>
+<h2>ADB Debugging</h2>
+<p>* This tool is only for Development</p>
+
+
+    <button class="tablinks" onclick="openTab(event, '1')">Open Dashboard</button>
+    <button class="tablinks" onclick="openTab(event, '2')">Open Logs</button>
+    <button class="tablinks" onclick="openTab(event, '3')">Open ADB Notification</button>
+
+<br><br><hr>
+
+<div id="1" class="tabcontent">
+  
+<h3>Dashboard</h3>
+
+<hr>
+<span class="material-icons">
+developer_board_off
+</span><p>NO ADB CONNECTED</p>
+<hr>
+</div>
+
+<div id="2" class="tabcontent">
+<h3>Logs</h3>
+<p>Log is not available!</p>
+
+<hr>
+<span class="material-icons">
+developer_board_off
+</span><p>NO ADB CONNECTED</p>
+<hr><Br>
+</div>
+
+<div id="3" class="tabcontent">
+
+<h3>Notification</h3>
+
+
+<hr>
+<h4>1 min ago:</h4>
+<p>PLEASE CHECK THE CABLE</p>
+<hr><Br>
+
+<hr>
+<h4>2 min ago:</h4>
+<span class="material-icons">
+developer_board_off
+</span><p>NO ADB CONNECTED</p>
+<hr><Br>
+
+
+</div>
+
+
+
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</body>
+
+</html>

@@ -58,23 +58,31 @@ var appData = {
 		"id": "camera",
 		"image": "Program File\Camera\icon.jpg",
 		"text": "Open your Webcam or IPW Camera",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File\Camera\index.html' allowfullscreen></iframe></div>"
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Camera/index.html' allowfullscreen></iframe></div>"
 	},
 	"calendal": {
 		"title": "Calendal",
 		"color": "#00695C",
 		"id": "calendal",
-		"image": "resources/empty.png",
+		"image": "Program File/Calendal/icon.jpg",
 		"text": "",
-		"content": ""
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Calendal/index.html' allowfullscreen></iframe></div>"
 	},
-	"zeta": {
-		"title": "Story Zeta",
+	"photos": {
+		"title": "Photos",
 		"color": "#827717",
-		"id": "zeta",
-		"image": "resources/empty.png",
-		"text": "",
-		"content": ""
+		"id": "photos",
+		"image": "Program File/Photo Viewer/icon.png",
+		"text": "Photo Viewer",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Photo Viewer/index.html' allowfullscreen></iframe></div>"
+	},
+	"settings": {
+		"title": "Settings",
+		"color": "#827717",
+		"id": "settings",
+		"image": "Program File/Settings/icon.png",
+		"text": "Settings",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Settings/index.html' allowfullscreen></iframe></div>"
 	},
 	"theta": {
 		"title": "Story theta",

@@ -1,0 +1,208 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+         .api-support
+         {
+            display: block;
+         }
+
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+        <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+        @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+        body {
+            margin: 0;
+            background: white;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body><br>
+<center><h1>-------- Setting --------</h1>
+</center>
+<center>
+<br>
+<h2>Connect</h2>
+
+    <button class="tablinks" onclick="openTab(event, '1')">Internet</button>
+    <button class="tablinks" onclick="openTab(event, '2')">Bluetooth</button>
+    <button class="tablinks" onclick="openTab(event, '3')">CharSafe and Nearby Share</button>
+
+<br><br><hr>
+
+<div id="1" class="tabcontent">
+  
+<h3>Internet</h3>
+<br>
+<img src="https://isseye.000webhostapp.com/bokpoe/setting-check/1.png" alt="Internet Test Fail" width="50%">
+<br>
+
+      <h1>Network Information</h1>
+ 
+      <span id="ni-unsupported" class="api-support hidden"><b>The System does not supported</b></span>
+      <span id="nio-supported" class="api-support hidden"><!--Old API version supported--></span>
+ 
+      
+         <p class="new-api hidden">
+            The connection type is <span id="t-value" class="value">undefined</span>.
+         </p>
+         <p class="old-api hidden">
+            The connection bandwidth is <span id="b-value" class="value">undefined</span>.
+         </p>
+         <p class="old-api hidden">
+            The connection is <span id="m-value" class="value">undefined</span>.
+         </p>
+      
+ 
+ 
+      <script>
+         var connection = window.navigator.connection    ||
+                          window.navigator.mozConnection ||
+                          null;
+         if (connection === null) {
+            document.getElementById('ni-unsupported').classList.remove('hidden');
+         } else if ('metered' in connection) {
+            document.getElementById('nio-supported').classList.remove('hidden');
+            [].slice.call(document.getElementsByClassName('old-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            var bandwidthValue = document.getElementById('b-value');
+            var meteredValue = document.getElementById('m-value');
+ 
+            connection.addEventListener('change', function (event) {
+               bandwidthValue.innerHTML = connection.bandwidth;
+               meteredValue.innerHTML = (connection.metered ? '' : 'not ') + 'metered';
+            });
+            connection.dispatchEvent(new Event('change'));
+         } else {
+            var typeValue = document.getElementById('t-value');
+            [].slice.call(document.getElementsByClassName('new-api')).forEach(function(element) {
+               element.classList.remove('hidden');
+            });
+ 
+            connection.addEventListener('typechange', function (event) {
+               typeValue.innerHTML = connection.type;
+            });
+            connection.dispatchEvent(new Event('typechange'));
+         }
+      </script>
+
+</div>
+
+<div id="2" class="tabcontent">
+<h3>Bluetooth</h3>
+
+      <span id="ni-unsupported" class="api-support hidden"><b>Something went wrong</b> The System does not supported</span>
+
+</div>
+
+<div id="3" class="tabcontent">
+
+
+<h3>CharSafe and Nearby Share</h3>
+
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">CharSafe và Chia sẻ gần đây qua mạng CharSafe</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><img src="https://www.appcreator24.com/android-app-creator/loader.gif" /> Đang tìm thiết bị...</h5>
+          <p>Những thiết bị đã tìm được sẽ hiển thị dưới đây:
+
+          <hr>
+        </div>
+        <div class="w3-container">
+          <!--<h5 class="w3-opacity"><b><a href="go:add-bycs">Lorem ipsum dolor sit amel</a></b></h5>-->
+          <p>Không có thiết bị nào</p>
+<br>
+        </div>
+      </div>
+<br><br><hr>
+  <p>Liên lạc với chúng tôi:</p>
+  <p>bteamapp@opentrash.com</p><hr>
+  <p>Vui lòng bật Bluetooth và dịch vụ định vị vị trí để có kết quả tìm chính xác nhất. Xem <a href="https://bteamwebsite.blogspot.com/p/privacy-policy.html"> Điều khoản</a></p>
+
+</div>
+
+
+
+
+<script>
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+</center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</body>
+
+</html>

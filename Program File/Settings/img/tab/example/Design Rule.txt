@@ -1,0 +1,4 @@
+
+Header Text: 36px (Google Sans) - Black - No Bold
+Footer Text: 16px (Google Sans) - Black - No Bold
+Image: Material Design - Left
