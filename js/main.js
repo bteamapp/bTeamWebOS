@@ -34,71 +34,47 @@ var appData = {
 		"id": "inbox",
 		"image": "resources/ginbox_icon.png",
 		"text": "You received a new email",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Message/index.html'  allowfullscreen></iframe></div>" 
+		"content": ""
 	},
 	"recipes": {
-		"title": "Clock",
+		"title": "Recipes",
 		"color": "#455A64",
 		"id": "recipes",
-		"image": "Program%20File/Clock/icon.jpg",
-		"text": "Set reminders, link your smartwatch and more...",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program%20File/Clock/index.html' allowfullscreen></iframe></div>"
+		"image": "resources/recipes.jpg",
+		"text": "See recipes for you",
+		"content": ""
 	},
 	"maps": {
 		"title": "Maps",
 		"color": "#689df6",
 		"id": "maps",
-		"image": "Program%20File/Maps/icon.jpg",
-		"text": "Get directions, info about location,...",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program%20File/Maps/index.html' allowfullscreen></iframe></div>"
+		"image": "resources/ist.png",
+		"text": "45 min drive to Work",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='maps.html' allowfullscreen></iframe></div>"
 	},
-	"camera": {
-		"title": "Camera",
+	"alpha": {
+		"title": "Story Alpha",
 		"color": "#3F51B5",
-		"id": "camera",
-		"image": "Program File\Camera\icon.jpg",
-		"text": "Open your Webcam or IPW Camera",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Camera/index.html' allowfullscreen></iframe></div>"
-	},
-	"calendal": {
-		"title": "Calendal",
-		"color": "#00695C",
-		"id": "calendal",
-		"image": "Program File/Calendal/icon.jpg",
-		"text": "",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Calendal/index.html' allowfullscreen></iframe></div>"
-	},
-	"photos": {
-		"title": "Photos",
-		"color": "#827717",
-		"id": "photos",
-		"image": "Program File/Photo Viewer/icon.png",
-		"text": "Photo Viewer",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Photo Viewer/index.html' allowfullscreen></iframe></div>"
-	},
-	"settings": {
-		"title": "Settings",
-		"color": "#827717",
-		"id": "settings",
+		"id": "alpha",
 		"image": "resources/empty.png",
-		"text": "Settings",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Settings/index.html' allowfullscreen></iframe></div>"
+		"text": "",
+		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='alpha.html' allowfullscreen></iframe></div>"
 	},
-	"calculator": {
-		"title": "Calculator",
-		"color": "#827717",
-		"id": "calculator",
-		"image": "Program File/Calculator/icon.jpg",
-		"text": "Calculator",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Calculator/index.html' allowfullscreen></iframe></div>"
+	"eta": {
+		"title": "Story Eta",
+		"color": "#00695C",
+		"id": "eta",
+		"image": "resources/empty.png",
+		"text": "",
+		"content": ""
 	},
-	"Files": {
-		"title": "Files",
+	"zeta": {
+		"title": "Story Zeta",
 		"color": "#827717",
-		"id": "files",
-		"image": "Program File/Files/icon.jpg",
-		"text": "Files",
-		"content": "<div style='position:relative;height:100%;overflow:hidden'><iframe src='Program File/Files/index.html' allowfullscreen></iframe></div>"
+		"id": "zeta",
+		"image": "resources/empty.png",
+		"text": "",
+		"content": ""
 	},
 	"theta": {
 		"title": "Story theta",
